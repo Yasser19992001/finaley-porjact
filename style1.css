@@ -1,0 +1,248 @@
+   
+    * {
+      margin: 0;
+      paddinggi: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: white;
+      background: #111;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 40px 40px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: lightgreen;
+    }
+
+    section p {
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+    /* -------------------
+       Navbar
+    ------------------- */
+    nav {
+      background: lightgreen;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: 0.3s;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background: darkgreen;
+      color: white;
+    }
+
+    /* -------------------
+       Hero Section
+    ------------------- */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px 40px 40px;
+      background: linear-gradient(white, #000);
+      ;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: lightgreen;
+    }
+
+    .hero-text p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .hero-text a {
+      background: lightgreen;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .hero-text a:hover {
+      background: darkgreen;
+      color: white;
+    }
+
+    .hero-image {
+      height: 800px;
+      max-width: 40%;
+      opacity: 60%;
+    }
+
+    .hero-image img {
+      width: 100%;
+
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(77, 74, 74, 0.5);
+    }
+
+    /* -------------------
+       Section Colors
+    ------------------- */
+    #about {
+      background: #222;
+    }
+
+    #services {
+      background: #333;
+    }
+
+    #skills {
+      background: #444;
+    }
+
+    #projects {
+      background: #807878;
+    }
+
+    #contact {
+      background: #000;
+    }
+
+    /* -- Skills Grid-- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .skill-item {
+      background: linear-gradient(white, #888);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .skill-item img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    /* -- Projects Grid-- */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      color: lightgreen;
+      margin-bottom: 10px;
+    }
+
+    /* -- Contact Info  Forms-- */
+    #contact{
+        display: flex;
+        justify-content: center;
+        flex-direction:column ;
+        align-items: center;
+        
+        
+    }
+    .contact-info {
+     background: linear-gradient(white, #888);
+      padding: 20px;
+      color: #000;
+      border-radius: 10px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      width: 400px;
+      margin-top: 20px;
+      
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: lightgreen;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .contact-form button:hover {
+      background: darkgreen;
+      color: white;
+    }
